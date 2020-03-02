@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formStudent.resx">
+      <DependentUpon>formStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +78,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FileManager.Common.Layer\FileManager.Common.Layer.csproj">
+      <Project>{1875f821-0856-435b-bf34-b0bc4668c751}</Project>
+      <Name>FileManager.Common.Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FileManager.DataAccess.Data\FileManager.DataAccess.Data.csproj">
+      <Project>{200c138f-1108-404f-8455-e77f5f2ecd8e}</Project>
+      <Name>FileManager.DataAccess.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
