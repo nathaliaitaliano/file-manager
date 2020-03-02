@@ -24,10 +24,14 @@ namespace FileManager.Presentation.WinSite
             String studentDni = textBoxStudentDni.Text;
             String name = textBoxName.Text;
             String surname = textBoxSurname.Text;
-            DateTime ageOfBirth = pickerAgeOfBirth.Value;
-            Student student = new Student(studentDni, name, surname, ageOfBirth);
-            XmlStudentDao xmlStudentDao = new XmlStudentDao();
-            xmlStudentDao.Add(student);
+            DateTime dateOfBirth = pickerAgeOfBirth.Value;
+            String fileFormat = comboBoxFileFormat.Text;
+
+            Student student = new Student(studentDni, name, surname, dateOfBirth);
+            StudentDao studentDao = StudentDaoFactory.Create(fileFormat);
+
+            studentDao.Add(student);
         }
+          
     }
 }

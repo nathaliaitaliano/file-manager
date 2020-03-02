@@ -71,11 +71,12 @@
             // 
             this.comboBoxFileFormat.FormattingEnabled = true;
             this.comboBoxFileFormat.Items.AddRange(new object[] {
+            "JSON",
             "XML"});
             this.comboBoxFileFormat.Location = new System.Drawing.Point(249, 245);
             this.comboBoxFileFormat.Name = "comboBoxFileFormat";
             this.comboBoxFileFormat.Size = new System.Drawing.Size(102, 28);
-            this.comboBoxFileFormat.TabIndex = 3;
+            this.comboBoxFileFormat.TabIndex = 5;
             // 
             // label1
             // 
@@ -100,7 +101,7 @@
             this.textBoxSurname.Location = new System.Drawing.Point(126, 143);
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.Size = new System.Drawing.Size(225, 26);
-            this.textBoxSurname.TabIndex = 6;
+            this.textBoxSurname.TabIndex = 3;
             // 
             // labelStudentDni
             // 
@@ -116,7 +117,7 @@
             this.textBoxStudentDni.Location = new System.Drawing.Point(150, 45);
             this.textBoxStudentDni.Name = "textBoxStudentDni";
             this.textBoxStudentDni.Size = new System.Drawing.Size(201, 26);
-            this.textBoxStudentDni.TabIndex = 8;
+            this.textBoxStudentDni.TabIndex = 1;
             // 
             // labelDateOfBirth
             // 
@@ -132,7 +133,7 @@
             this.pickerAgeOfBirth.Location = new System.Drawing.Point(151, 190);
             this.pickerAgeOfBirth.Name = "pickerAgeOfBirth";
             this.pickerAgeOfBirth.Size = new System.Drawing.Size(200, 26);
-            this.pickerAgeOfBirth.TabIndex = 10;
+            this.pickerAgeOfBirth.TabIndex = 4;
             this.pickerAgeOfBirth.Value = new System.DateTime(2020, 3, 2, 0, 0, 0, 0);
             // 
             // formStudent

@@ -4,9 +4,9 @@ using System.Xml.Serialization;
 
 namespace FileManager.DataAccess.Data
 {
-    public class XmlStudentDao
+    public class XmlStudentDao : StudentDao
     {
-        public void Add(Student student)
+        public override void Add(Student student)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(Student));
             using (TextWriter writer = new StreamWriter(@"C:\Users\usuario\source\repos\FileManager\FileRepository\XMLStudantDao.xml"))
