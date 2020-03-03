@@ -3,9 +3,9 @@ using System;
 
 namespace FileManager.DataAccess.Data
 {
-    public class FileStudentDaoFactory
+    public class StudentDaoFactory
     {
-        public static FileStudentDao Create(String fileFormat)
+        public static StudentDao Create(String fileFormat)
         {
             if(fileFormat == "XML")
             {

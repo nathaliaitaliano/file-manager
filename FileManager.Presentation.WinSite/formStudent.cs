@@ -21,7 +21,7 @@ namespace FileManager.Presentation.WinSite
             String fileFormat = comboBoxFileFormat.Text;
 
             Student student = new Student(studentDni, name, surname, dateOfBirth);
-            FileStudentDao studentDao = FileStudentDaoFactory.Create(fileFormat);
+            StudentDao studentDao = StudentDaoFactory.Create(fileFormat);
 
             studentDao.Add(student);
         }

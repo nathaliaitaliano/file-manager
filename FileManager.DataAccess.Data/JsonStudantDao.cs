@@ -6,7 +6,7 @@ using System.Web.Script.Serialization;
 
 namespace FileManager.Presentation.WinSite
 {
-    public class JsonStudentDao : FileStudentDao
+    public class JsonStudentDao : StudentDao
     {
         public JsonStudentDao()
         {
