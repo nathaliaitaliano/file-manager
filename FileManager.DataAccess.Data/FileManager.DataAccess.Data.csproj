@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web.Extensions" />
@@ -43,9 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="JsonStudantDao.cs" />
-    <Compile Include="StudentDao.cs" />
+    <Compile Include="FileStudentDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StudentDaoFactory.cs" />
+    <Compile Include="FileStudentDaoFactory.cs" />
+    <Compile Include="TxtStudentDao.cs" />
     <Compile Include="XmlStudentDao.cs" />
   </ItemGroup>
   <ItemGroup>

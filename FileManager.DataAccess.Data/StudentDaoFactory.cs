@@ -3,9 +3,9 @@ using System;
 
 namespace FileManager.DataAccess.Data
 {
-    public class StudentDaoFactory
+    public class FileStudentDaoFactory
     {
-        public static StudentDao Create(String fileFormat)
+        public static FileStudentDao Create(String fileFormat)
         {
             if(fileFormat == "XML")
             {
@@ -14,6 +14,10 @@ namespace FileManager.DataAccess.Data
             if(fileFormat == "JSON")
             {
                 return new JsonStudentDao();
+            }
+            if(fileFormat == "TXT")
+            {
+                return new TxtStudentDao();
             }
             return null;
         }

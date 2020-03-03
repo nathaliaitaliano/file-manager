@@ -72,7 +72,8 @@
             this.comboBoxFileFormat.FormattingEnabled = true;
             this.comboBoxFileFormat.Items.AddRange(new object[] {
             "JSON",
-            "XML"});
+            "XML",
+            "TXT"});
             this.comboBoxFileFormat.Location = new System.Drawing.Point(249, 245);
             this.comboBoxFileFormat.Name = "comboBoxFileFormat";
             this.comboBoxFileFormat.Size = new System.Drawing.Size(102, 28);

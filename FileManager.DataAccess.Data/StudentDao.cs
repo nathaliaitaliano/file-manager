@@ -2,7 +2,7 @@
 
 namespace FileManager.DataAccess.Data
 {
-    public abstract class StudentDao
+    public abstract class FileStudentDao
     {
         public abstract void Add(Student student);
     }
